@@ -1,0 +1,111 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
+      },
+      "Intrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Intrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Intrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../DoMain/Domain.csproj",
+      "msbuildProject": "../DoMain/Domain.csproj"
+    },
+    "Intrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Intrastructure/Intrastructure.csproj",
+      "msbuildProject": "../Intrastructure/Intrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Domain >= 1.0.0",
+      "Intrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\hhp\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\hhp\\Desktop\\c# course\\HomeWork\\MainApp\\MainApp.csproj",
+      "projectName": "MainApp",
+      "projectPath": "C:\\Users\\hhp\\Desktop\\c# course\\HomeWork\\MainApp\\MainApp.csproj",
+      "packagesPath": "C:\\Users\\hhp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hhp\\Desktop\\c# course\\HomeWork\\MainApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\hhp\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "C:\\Users\\hhp\\Desktop\\c# course\\HomeWork\\DoMain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\hhp\\Desktop\\c# course\\HomeWork\\DoMain\\Domain.csproj"
+            },
+            "C:\\Users\\hhp\\Desktop\\c# course\\HomeWork\\Intrastructure\\Intrastructure.csproj": {
+              "projectPath": "C:\\Users\\hhp\\Desktop\\c# course\\HomeWork\\Intrastructure\\Intrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
